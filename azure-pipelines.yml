@@ -2,7 +2,7 @@ trigger:
 - main
 
 pool:
-  vmImage: 'ubuntu-latest'
+  name: 'MyPool'
 
 variables:
   azureSubscription: 'Azure-Service-Connection'
@@ -10,4 +10,4 @@ variables:
 
 steps:
 - script: echo "Pipeline running successfully"
-  displayName: Test Build 
+  displayName: Test Build
