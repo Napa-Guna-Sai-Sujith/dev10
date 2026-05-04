@@ -2,8 +2,12 @@ trigger:
 - main
 
 pool:
-  name: MyPool
+  vmImage: 'ubuntu-latest'
+
+variables:
+  azureSubscription: 'Azure-Service-Connection'
+  appName: 'kavya-11'
 
 steps:
 - script: echo "Pipeline running successfully"
-  displayName: Test Build
+  displayName: Test Build 
